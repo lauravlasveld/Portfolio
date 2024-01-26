@@ -1,0 +1,66 @@
+
+body{
+  background-image: url("images/foto1.JPG") ;
+  min-height: 1500px;
+  background-repeat: no-repeat;
+  background: linear-gradient(#0a2e49, #000000);     
+  background-size: 150rem;    
+  top: 70%;
+}
+
+.todo{
+ position:relative;
+  width: 222vh;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.todo:before{
+
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#0a2a43,transparent);
+  z-index: 10;
+}
+
+
+
+.todo:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10;
+  mix-blend-mode: color;
+}
+.todo img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text{
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 10em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  z-index: 1;
+}
+
+#road{
+  z-index:2 ;
+}
